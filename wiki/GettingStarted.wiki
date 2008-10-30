@@ -21,7 +21,7 @@ To generate the php files add the anltr jars to the CLASSPATH and run
 {{{
 java org.antlr.Tool Id.g
 }}}
-This will generate two Php files IdLexer.php and IdParser.php. You can build a program that uses the new parser.
+This will generate two Php files `IdLexer.php` and `IdParser.php`. You can build a program that uses the new parser.
 {{{
 <?php
 require 'antlr/antlr.php'; //Path to the antlr runtime files
