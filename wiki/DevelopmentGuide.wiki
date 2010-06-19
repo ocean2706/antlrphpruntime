@@ -11,9 +11,9 @@ This project concentrates on providing the PHP implementation of the ANTLR runti
 The idea behind the code placement in the project is to maintain close ressembleness
 to the existing structure of the original ANTLR code as well as introduce nice modern way of PHP packaging (for example, like it is done in Zend Framework). The main elements are:
 
-* *runtime* 
-* *tool*
-* *examples*
+ * *runtime* 
+ * *tool*
+ * *examples*
 
 = Codestyle =
 
