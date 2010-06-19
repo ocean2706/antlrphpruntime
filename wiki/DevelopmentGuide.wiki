@@ -25,7 +25,7 @@ In order to produce effective, readable and synchronized code the use of code st
 
 = ANTLR Tool Integration =
 
-To integrate into the org.antlr.tool (which is written in Java) one has to create
+To integrate into the org.antlr.Tool (which is written in Java) one has to create
 at minimum two files:
  * Java class for implementation of org.antlr.codegen.Target
   _tool/src/main/java/org/antlr/codegen/PhpTarget.java_
