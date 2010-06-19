@@ -1,5 +1,5 @@
 <?php
-// $ANTLR 3.1.3 ??? 06, 2009 18:28:01 XMLLexer.g 2009-05-06 18:48:12
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 examples/trivialXMLLexer/XMLLexer.g 2010-06-19 17:15:01
 
 
 # for convenience in actions
@@ -471,15 +471,15 @@ class XMLLexer extends AntlrLexer {
         
             $this->dfa6 = new XMLLexer_DFA6($this);
     }
-    function getGrammarFileName() { return "XMLLexer.g"; }
+    function getGrammarFileName() { return "examples/trivialXMLLexer/XMLLexer.g"; }
 
     // $ANTLR start "TAG_START_OPEN"
     function mTAG_START_OPEN(){
         try {
             $_type = XMLLexer::$TAG_START_OPEN;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:14:16: ( '<' ) 
-            // XMLLexer.g:14:18: '<' 
+            // examples/trivialXMLLexer/XMLLexer.g:16:16: ( '<' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:16:18: '<' 
             {
             $this->matchChar(60); 
                XMLLexer::$tagMode = true; 
@@ -500,8 +500,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$TAG_END_OPEN;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:15:14: ( '</' ) 
-            // XMLLexer.g:15:16: '</' 
+            // examples/trivialXMLLexer/XMLLexer.g:17:14: ( '</' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:17:16: '</' 
             {
             $this->matchString("</"); 
 
@@ -523,8 +523,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$TAG_CLOSE;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:16:11: ({...}? => '>' ) 
-            // XMLLexer.g:16:13: {...}? => '>' 
+            // examples/trivialXMLLexer/XMLLexer.g:18:11: ({...}? => '>' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:18:13: {...}? => '>' 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "TAG_CLOSE", " XMLLexer::\\$tagMode ");
@@ -548,8 +548,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$TAG_EMPTY_CLOSE;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:17:17: ({...}? => '/>' ) 
-            // XMLLexer.g:17:19: {...}? => '/>' 
+            // examples/trivialXMLLexer/XMLLexer.g:19:17: ({...}? => '/>' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:19:19: {...}? => '/>' 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "TAG_EMPTY_CLOSE", " XMLLexer::\\$tagMode ");
@@ -574,8 +574,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$ATTR_EQ;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:19:9: ({...}? => '=' ) 
-            // XMLLexer.g:19:11: {...}? => '=' 
+            // examples/trivialXMLLexer/XMLLexer.g:21:9: ({...}? => '=' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:21:11: {...}? => '=' 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "ATTR_EQ", " XMLLexer::\\$tagMode ");
@@ -598,13 +598,13 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$ATTR_VALUE;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:21:12: ({...}? => ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) ) 
-            // XMLLexer.g:21:14: {...}? => ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:23:12: ({...}? => ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) ) 
+            // examples/trivialXMLLexer/XMLLexer.g:23:14: {...}? => ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "ATTR_VALUE", " XMLLexer::\\$tagMode ");
             }
-            // XMLLexer.g:22:9: ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:24:9: ( '\"' (~ '\"' )* '\"' | '\\'' (~ '\\'' )* '\\'' ) 
             $alt3=2;
             $LA3_0 = $this->input->LA(1);
 
@@ -621,10 +621,10 @@ class XMLLexer extends AntlrLexer {
             }
             switch ($alt3) {
                 case 1 :
-                    // XMLLexer.g:22:11: '\"' (~ '\"' )* '\"' 
+                    // examples/trivialXMLLexer/XMLLexer.g:24:11: '\"' (~ '\"' )* '\"' 
                     {
                     $this->matchChar(34); 
-                    // XMLLexer.g:22:15: (~ '\"' )* 
+                    // examples/trivialXMLLexer/XMLLexer.g:24:15: (~ '\"' )* 
                     //loop1:
                     do {
                         $alt1=2;
@@ -637,7 +637,7 @@ class XMLLexer extends AntlrLexer {
 
                         switch ($alt1) {
                     	case 1 :
-                    	    // XMLLexer.g:22:16: ~ '\"' 
+                    	    // examples/trivialXMLLexer/XMLLexer.g:24:16: ~ '\"' 
                     	    {
                     	    if ( ($this->input->LA(1)>=$this->getToken('0') && $this->input->LA(1)<=$this->getToken('33'))||($this->input->LA(1)>=$this->getToken('35') && $this->input->LA(1)<=$this->getToken('65535')) ) {
                     	        $this->input->consume();
@@ -662,10 +662,10 @@ class XMLLexer extends AntlrLexer {
                     }
                     break;
                 case 2 :
-                    // XMLLexer.g:23:11: '\\'' (~ '\\'' )* '\\'' 
+                    // examples/trivialXMLLexer/XMLLexer.g:25:11: '\\'' (~ '\\'' )* '\\'' 
                     {
                     $this->matchChar(39); 
-                    // XMLLexer.g:23:16: (~ '\\'' )* 
+                    // examples/trivialXMLLexer/XMLLexer.g:25:16: (~ '\\'' )* 
                     //loop2:
                     do {
                         $alt2=2;
@@ -678,7 +678,7 @@ class XMLLexer extends AntlrLexer {
 
                         switch ($alt2) {
                     	case 1 :
-                    	    // XMLLexer.g:23:17: ~ '\\'' 
+                    	    // examples/trivialXMLLexer/XMLLexer.g:25:17: ~ '\\'' 
                     	    {
                     	    if ( ($this->input->LA(1)>=$this->getToken('0') && $this->input->LA(1)<=$this->getToken('38'))||($this->input->LA(1)>=$this->getToken('40') && $this->input->LA(1)<=$this->getToken('65535')) ) {
                     	        $this->input->consume();
@@ -722,13 +722,13 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$PCDATA;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:27:8: ({...}? => (~ '<' )+ ) 
-            // XMLLexer.g:27:10: {...}? => (~ '<' )+ 
+            // examples/trivialXMLLexer/XMLLexer.g:29:8: ({...}? => (~ '<' )+ ) 
+            // examples/trivialXMLLexer/XMLLexer.g:29:10: {...}? => (~ '<' )+ 
             {
             if ( !(( !( XMLLexer::$tagMode ) )) ) {
                 throw new FailedPredicateException($this->input, "PCDATA", " !( XMLLexer::\\$tagMode ) ");
             }
-            // XMLLexer.g:27:42: (~ '<' )+ 
+            // examples/trivialXMLLexer/XMLLexer.g:29:42: (~ '<' )+ 
             $cnt4=0;
             //loop4:
             do {
@@ -742,7 +742,7 @@ class XMLLexer extends AntlrLexer {
 
                 switch ($alt4) {
             	case 1 :
-            	    // XMLLexer.g:27:43: ~ '<' 
+            	    // examples/trivialXMLLexer/XMLLexer.g:29:43: ~ '<' 
             	    {
             	    if ( ($this->input->LA(1)>=$this->getToken('0') && $this->input->LA(1)<=$this->getToken('59'))||($this->input->LA(1)>=$this->getToken('61') && $this->input->LA(1)<=$this->getToken('65535')) ) {
             	        $this->input->consume();
@@ -783,8 +783,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$GENERIC_ID;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:30:5: ({...}? => ( LETTER | '_' | ':' ) ( NAMECHAR )* ) 
-            // XMLLexer.g:30:7: {...}? => ( LETTER | '_' | ':' ) ( NAMECHAR )* 
+            // examples/trivialXMLLexer/XMLLexer.g:32:5: ({...}? => ( LETTER | '_' | ':' ) ( NAMECHAR )* ) 
+            // examples/trivialXMLLexer/XMLLexer.g:32:7: {...}? => ( LETTER | '_' | ':' ) ( NAMECHAR )* 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "GENERIC_ID", " XMLLexer::\\$tagMode ");
@@ -798,7 +798,7 @@ class XMLLexer extends AntlrLexer {
                 $this->recover($mse);
                 throw $mse;}
 
-            // XMLLexer.g:31:29: ( NAMECHAR )* 
+            // examples/trivialXMLLexer/XMLLexer.g:33:29: ( NAMECHAR )* 
             //loop5:
             do {
                 $alt5=2;
@@ -811,7 +811,7 @@ class XMLLexer extends AntlrLexer {
 
                 switch ($alt5) {
             	case 1 :
-            	    // XMLLexer.g:31:30: NAMECHAR 
+            	    // examples/trivialXMLLexer/XMLLexer.g:33:30: NAMECHAR 
             	    {
             	    $this->mNAMECHAR(); 
 
@@ -838,8 +838,8 @@ class XMLLexer extends AntlrLexer {
     // $ANTLR start "NAMECHAR"
     function mNAMECHAR(){
         try {
-            // XMLLexer.g:35:5: ( LETTER | DIGIT | '.' | '-' | '_' | ':' ) 
-            // XMLLexer.g: 
+            // examples/trivialXMLLexer/XMLLexer.g:37:5: ( LETTER | DIGIT | '.' | '-' | '_' | ':' ) 
+            // examples/trivialXMLLexer/XMLLexer.g: 
             {
             if ( ($this->input->LA(1)>=$this->getToken('45') && $this->input->LA(1)<=$this->getToken('46'))||($this->input->LA(1)>=$this->getToken('48') && $this->input->LA(1)<=$this->getToken('58'))||($this->input->LA(1)>=$this->getToken('65') && $this->input->LA(1)<=$this->getToken('90'))||$this->input->LA(1)==$this->getToken('95')||($this->input->LA(1)>=$this->getToken('97') && $this->input->LA(1)<=$this->getToken('122')) ) {
                 $this->input->consume();
@@ -863,8 +863,8 @@ class XMLLexer extends AntlrLexer {
     // $ANTLR start "DIGIT"
     function mDIGIT(){
         try {
-            // XMLLexer.g:39:5: ( '0' .. '9' ) 
-            // XMLLexer.g:39:10: '0' .. '9' 
+            // examples/trivialXMLLexer/XMLLexer.g:41:5: ( '0' .. '9' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:41:10: '0' .. '9' 
             {
             $this->matchRange(48,57); 
 
@@ -880,8 +880,8 @@ class XMLLexer extends AntlrLexer {
     // $ANTLR start "LETTER"
     function mLETTER(){
         try {
-            // XMLLexer.g:43:5: ( 'a' .. 'z' | 'A' .. 'Z' ) 
-            // XMLLexer.g: 
+            // examples/trivialXMLLexer/XMLLexer.g:45:5: ( 'a' .. 'z' | 'A' .. 'Z' ) 
+            // examples/trivialXMLLexer/XMLLexer.g: 
             {
             if ( ($this->input->LA(1)>=$this->getToken('65') && $this->input->LA(1)<=$this->getToken('90'))||($this->input->LA(1)>=$this->getToken('97') && $this->input->LA(1)<=$this->getToken('122')) ) {
                 $this->input->consume();
@@ -907,8 +907,8 @@ class XMLLexer extends AntlrLexer {
         try {
             $_type = XMLLexer::$WS;
             $_channel = XMLLexer::$DEFAULT_TOKEN_CHANNEL;
-            // XMLLexer.g:47:5: ({...}? => ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) ) 
-            // XMLLexer.g:47:8: {...}? => ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) 
+            // examples/trivialXMLLexer/XMLLexer.g:49:5: ({...}? => ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) ) 
+            // examples/trivialXMLLexer/XMLLexer.g:49:8: {...}? => ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) 
             {
             if ( !(( XMLLexer::$tagMode )) ) {
                 throw new FailedPredicateException($this->input, "WS", " XMLLexer::\\$tagMode ");
@@ -936,68 +936,68 @@ class XMLLexer extends AntlrLexer {
     // $ANTLR end "WS"
 
     function mTokens(){
-        // XMLLexer.g:1:8: ( TAG_START_OPEN | TAG_END_OPEN | TAG_CLOSE | TAG_EMPTY_CLOSE | ATTR_EQ | ATTR_VALUE | PCDATA | GENERIC_ID | WS ) 
+        // examples/trivialXMLLexer/XMLLexer.g:1:8: ( TAG_START_OPEN | TAG_END_OPEN | TAG_CLOSE | TAG_EMPTY_CLOSE | ATTR_EQ | ATTR_VALUE | PCDATA | GENERIC_ID | WS ) 
         $alt6=9;
         $alt6 = $this->dfa6->predict($this->input);
         switch ($alt6) {
             case 1 :
-                // XMLLexer.g:1:10: TAG_START_OPEN 
+                // examples/trivialXMLLexer/XMLLexer.g:1:10: TAG_START_OPEN 
                 {
                 $this->mTAG_START_OPEN(); 
 
                 }
                 break;
             case 2 :
-                // XMLLexer.g:1:25: TAG_END_OPEN 
+                // examples/trivialXMLLexer/XMLLexer.g:1:25: TAG_END_OPEN 
                 {
                 $this->mTAG_END_OPEN(); 
 
                 }
                 break;
             case 3 :
-                // XMLLexer.g:1:38: TAG_CLOSE 
+                // examples/trivialXMLLexer/XMLLexer.g:1:38: TAG_CLOSE 
                 {
                 $this->mTAG_CLOSE(); 
 
                 }
                 break;
             case 4 :
-                // XMLLexer.g:1:48: TAG_EMPTY_CLOSE 
+                // examples/trivialXMLLexer/XMLLexer.g:1:48: TAG_EMPTY_CLOSE 
                 {
                 $this->mTAG_EMPTY_CLOSE(); 
 
                 }
                 break;
             case 5 :
-                // XMLLexer.g:1:64: ATTR_EQ 
+                // examples/trivialXMLLexer/XMLLexer.g:1:64: ATTR_EQ 
                 {
                 $this->mATTR_EQ(); 
 
                 }
                 break;
             case 6 :
-                // XMLLexer.g:1:72: ATTR_VALUE 
+                // examples/trivialXMLLexer/XMLLexer.g:1:72: ATTR_VALUE 
                 {
                 $this->mATTR_VALUE(); 
 
                 }
                 break;
             case 7 :
-                // XMLLexer.g:1:83: PCDATA 
+                // examples/trivialXMLLexer/XMLLexer.g:1:83: PCDATA 
                 {
                 $this->mPCDATA(); 
 
                 }
                 break;
             case 8 :
-                // XMLLexer.g:1:90: GENERIC_ID 
+                // examples/trivialXMLLexer/XMLLexer.g:1:90: GENERIC_ID 
                 {
                 $this->mGENERIC_ID(); 
 
                 }
                 break;
             case 9 :
-                // XMLLexer.g:1:101: WS 
+                // examples/trivialXMLLexer/XMLLexer.g:1:101: WS 
                 {
                 $this->mWS(); 
 
