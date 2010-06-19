@@ -17,11 +17,13 @@ to the existing structure of the original ANTLR code as well as to introduce a n
 
 = Codestyle =
 
-In order to produce effective, readable and synchronized code the use of code styles is required. Please, use such PHP tools as *codesniffer* to to auto checks before committing new code. In case of uncertainty or doubt developer is highly encouraged to follow this list of coding standards, sorted according to their descending weight:
+In order to produce effective, readable and synchronized code the use of code styles is required. Please, use such PHP tools as [http://pear.php.net/package/PHP_CodeSniffer  codesniffer] to do automated code checks before committing new code. In case of uncertainty or doubt developer is highly encouraged to follow this list of coding standards, sorted according to their descending weight:
 
  * [http://framework.zend.com/manual/en/coding-standard.html Zend coding standard]
  * Pear coding standard
  * PHP coding standard
+
+Please, pay attention to the possibility of using codereview requests.
 
 = ANTLR Tool Integration =
 
