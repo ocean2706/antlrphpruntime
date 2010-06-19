@@ -1,7 +1,7 @@
 #summary Development Guide
 #labels Development,Guide,Roadmap
 
-= What is the ANTLR Php Runtime is all about? =
+= What the ANTLR Php Runtime is all about? =
 
 ANTLR Tool is a well known library that has been around for more then a decade. It allows to generate grammatical parsers facilitating in language recognition tasks. 
 This project concentrates on providing the PHP implementation of the ANTLR runtime.
