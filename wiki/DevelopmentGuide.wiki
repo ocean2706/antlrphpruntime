@@ -3,13 +3,13 @@
 
 = What the ANTLR Php Runtime is all about? =
 
-ANTLR Tool is a well known library that has been around for more then a decade. It allows to generate grammatical parsers facilitating in language recognition tasks. 
+[ANTLR Tool | http://www.antlr.org/] is a well known library that has been around for more then a decade. It allows to generate grammatical parsers facilitating in language recognition tasks. 
 This project concentrates on providing the PHP implementation of the ANTLR runtime.
 
 = ROADMAP =
 
 The idea behind the code placement in the project is to maintain close ressembleness
-to the existing structure of the original ANTLR code as well as introduce nice modern way of PHP packaging (for example, like it is done in Zend Framework). The main elements are:
+to the existing structure of the original ANTLR code as well as to introduce a nice modern way of PHP packaging (for example, like it is done in Zend Framework). The main elements are:
 
  * *runtime* 
  * *tool*
@@ -19,16 +19,16 @@ to the existing structure of the original ANTLR code as well as introduce nice m
 
 In order to produce effective, readable and synchronized code the use of code styles is required. Please, use such PHP tools as *codesniffer* to to auto checks before committing new code. In case of uncertainty or doubt developer is highly encouraged to follow this list of coding standards, sorted according to their descending weight:
 
-* [Zend coding standard | http://framework.zend.com/manual/en/coding-standard.html]
-* Pear coding standard
-* PHP coding standard
+ * [Zend coding standard | http://framework.zend.com/manual/en/coding-standard.html]
+ * Pear coding standard
+ * PHP coding standard
 
 = ANTLR Tool Integration =
 
 To integrate into the org.antlr.tool (which is written in Java) one has to create
 at minimum two files:
-* Java class for implementation of org.antlr.codegen.Target
-``
+ * Java class for implementation of org.antlr.codegen.Target
+{{{tool/src/main/java/org/antlr/codegen/PhpTarget.java}}}
 * Language StringTemplate group file , used for code generation
 `tool/src/main/resources/org/antlr/codegen/templates/Php/Php.stg`
 
