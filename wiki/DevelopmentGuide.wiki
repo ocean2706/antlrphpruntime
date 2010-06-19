@@ -3,7 +3,7 @@
 
 = What the ANTLR Php Runtime is all about? =
 
-[ANTLR Tool | http://www.antlr.org/] is a well known library that has been around for more then a decade. It allows to generate grammatical parsers facilitating in language recognition tasks. 
+[http://www.antlr.org ANTLR Tool] is a well known library that has been around for more then a decade. It allows to generate grammatical parsers facilitating in language recognition tasks. 
 This project concentrates on providing the PHP implementation of the ANTLR runtime.
 
 = ROADMAP =
@@ -19,7 +19,7 @@ to the existing structure of the original ANTLR code as well as to introduce a n
 
 In order to produce effective, readable and synchronized code the use of code styles is required. Please, use such PHP tools as *codesniffer* to to auto checks before committing new code. In case of uncertainty or doubt developer is highly encouraged to follow this list of coding standards, sorted according to their descending weight:
 
- * [Zend coding standard | http://framework.zend.com/manual/en/coding-standard.html]
+ * [http://framework.zend.com/manual/en/coding-standard.html Zend coding standard]
  * Pear coding standard
  * PHP coding standard
 
@@ -28,11 +28,11 @@ In order to produce effective, readable and synchronized code the use of code st
 To integrate into the org.antlr.tool (which is written in Java) one has to create
 at minimum two files:
  * Java class for implementation of org.antlr.codegen.Target
-{{{tool/src/main/java/org/antlr/codegen/PhpTarget.java}}}
-* Language StringTemplate group file , used for code generation
-`tool/src/main/resources/org/antlr/codegen/templates/Php/Php.stg`
+  _tool/src/main/java/org/antlr/codegen/PhpTarget.java_
+ * Language StringTemplate group file , used for code generation
+  _tool/src/main/resources/org/antlr/codegen/templates/Php/Php.stg_
 
-Now a very convenient way for frequent introduction of changes into the .stg file,
+Now, a very convenient way for frequent introduction of changes into the .stg file,
 is to pack PHP ANTLR Target into a separate Jar file. Then on need to append this new extension jar to the classpath when calling `org.antlr.Tool`. This works perfectly fine,
 because it is actually a very good example of exploiting the idea of Java packaging for maintaining code extensibility.
 
