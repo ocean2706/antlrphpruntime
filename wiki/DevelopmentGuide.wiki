@@ -35,7 +35,7 @@ at minimum two files:
   _tool/src/main/resources/org/antlr/codegen/templates/Php/Php.stg_
 
 Now, a very convenient way for frequent introduction of changes into the .stg file
-is to pack PHP ANTLR Target into a separate Jar file. After that one also need to append this new extension .jar file to the classpath when calling `org.antlr.Tool`. This works perfectly fine, because it is actually a very good example of exploiting the idea of Java packaging for maintaining code extensibility.
+is to pack PHP ANTLR Target into a separate Jar file. After that, one also needs to append this new extension .jar file to the classpath when calling `org.antlr.Tool`. This works perfectly fine, because it is actually a very good example of exploiting the idea of Java packaging for maintaining code extensibility.
 
 == Compiling antlr-php.jar ==
 
